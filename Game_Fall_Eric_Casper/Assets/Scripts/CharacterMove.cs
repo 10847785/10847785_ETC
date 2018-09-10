@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMove : MonoBehaviour {
 
 	public int MoveSpeed;
-	private float jumpHeight; 
+	public float JumpHeight = 15;
 
 	// Use this for initialization
 	void Start () {
