@@ -9,16 +9,20 @@ public class CharacterMove : MonoBehaviour {
 	public float JumpHeight;
 
 	// Player grounded variables
-	public Transform groundCheck;
-	public float groundCheckRadius;
+	public Transform GroundCheck;
+	public float GroundCheckRadius;
 	public LayerMask whatIsGround;
-	private bool grounded;
+	private bool Grounded;
 
 	// Use this for initialization
 	void Start () {
 		print("Hello World");
 	}
 	
+	void FixedUpdate () {
+		Grounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, whatIsGround);
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
