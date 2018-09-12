@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour {
 
+	// Player Movement Variables
 	public int MoveSpeed;
 	public float JumpHeight;
 
