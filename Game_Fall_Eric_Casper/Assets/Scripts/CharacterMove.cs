@@ -25,6 +25,15 @@ public class CharacterMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		// This code makes the character jump
+		if(Input.GetKeyDown (KeyCode.Space)&& Grounded){
+			Jump();
+		}
 		
+	}
+
+	public void Jump(){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
 	}
 }
