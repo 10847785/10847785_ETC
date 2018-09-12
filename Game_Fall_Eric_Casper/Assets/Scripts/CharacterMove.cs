@@ -8,6 +8,12 @@ public class CharacterMove : MonoBehaviour {
 	public int MoveSpeed;
 	public float JumpHeight;
 
+	// Player grounded variables
+	public Transform groundCheck;
+	public float groundCheckRadius;
+	public LayerMask whatIsGround;
+	private bool grounded;
+
 	// Use this for initialization
 	void Start () {
 		print("Hello World");
