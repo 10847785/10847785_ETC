@@ -423,11 +423,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 3
   JumpHeight: 5
-  GroundCheck: {fileID: 0}
-  GroundCheckRadius: 0
+  GroundCheck: {fileID: 736774454}
+  GroundCheckRadius: 0.5
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!1 &2040759014
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 2040759016}
   - component: {fileID: 2040759015}
   - component: {fileID: 2040759017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
