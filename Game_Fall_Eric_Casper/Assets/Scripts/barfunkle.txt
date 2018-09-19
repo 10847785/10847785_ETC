@@ -1,0 +1,18 @@
+
+
+// Player Test
+
+public class CharacterMove : Player
+    public int MoveSpeed;
+    public float Grounded
+
+    if(Input.GetKeyDown) (KeyCode.Space)&& Grounded){
+    }
+
+    public bool Grounded
+    public float GroundCheck
+]
+
+
+
+
