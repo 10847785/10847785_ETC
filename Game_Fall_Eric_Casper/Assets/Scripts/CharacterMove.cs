@@ -9,7 +9,7 @@ public class CharacterMove : MonoBehaviour {
 	public float JumpHeight;
 	private bool doubleJump;
 
-	// Player grounded variables
+	// Player Grounded variables
 	public Transform GroundCheck;
 	public float GroundCheckRadius;
 	public LayerMask whatIsGround;
@@ -37,26 +37,33 @@ public class CharacterMove : MonoBehaviour {
 		}
 		
 		// Double Jump Code
-		if(grounded)
+		if(Grounded)
 			doubleJump = false;
 	
-	
-		if(Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !grounded){
+
+		if(Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !Grounded){
 			Jump();
 			doubleJump = true;
 		}
 	
+		//Non-Stick Player
+		moveVelocity = 0f;
+
 		// This code makes the character move from side to side using the A&D keys
 		if(Input.GetKey (KeyCode.D)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-		
+			// GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			moveVelocity = MoveSpeed;
 		}
+
 		if(Input.GetKey (KeyCode.A)){
-			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			// GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			moveVelocity = MoveSpeed;
 		}
+	
+		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+
+	
 	}
-
-
 
 	public void Jump(){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
