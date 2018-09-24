@@ -7,7 +7,7 @@ public class CharacterMove : MonoBehaviour {
 	// Player Movement Variables
 	public int MoveSpeed;
 	public float JumpHeight;
-	private bool doubleJump;
+	private bool DoubleJump;
 
 	// Player Grounded variables
 	public Transform GroundCheck;
@@ -38,12 +38,12 @@ public class CharacterMove : MonoBehaviour {
 		
 		// Double Jump Code
 		if(Grounded)
-			doubleJump = false;
+			DoubleJump = false;
 	
 
-		if(Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !Grounded){
+		if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
 			Jump();
-			doubleJump = true;
+			DoubleJump = true;
 		}
 	
 		//Non-Stick Player
