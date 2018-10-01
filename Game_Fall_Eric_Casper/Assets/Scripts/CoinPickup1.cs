@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CoinPickup1 : MonoBehaviour {
 
-	public int PointsToAdd
+	public int PointsToAdd;
 
-	 void OnTriggerEnter2D (Collider2D Other){
+	void OnTriggerEnter2D (Collider2D Other){
 		if (Other.GetComponent<Rigidbody2D> () == null)
 			return;
 	
-
-	ScoreManager.AddPoints (PointsToAdd);
+		ScoreManager1.AddPoints (PointsToAdd);
 
 	Destroy (gameObject);
 	}
