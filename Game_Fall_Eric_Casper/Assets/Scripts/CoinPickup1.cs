@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinPickup : MonoBehaviour {
+public class CoinPickup1 : MonoBehaviour {
 
 	public int PointsToAdd
 
-	void OnTriggerEnter2D (Collider2D Other){
+	 void OnTriggerEnter2D (Collider2D Other){
 		if (Other.GetComponent<Rigidbody2D> () == null)
-		return;
+			return;
+	
 
 	ScoreManager.AddPoints (PointsToAdd);
 
