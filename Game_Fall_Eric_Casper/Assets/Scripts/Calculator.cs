@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Calculator : MonoBehaviour {
 
-	void Start () {
-		ScoreCalc = GetComponent<Text>();
-	}
+	// void Start () {
+	// 	ScoreCalc = GetComponent<Text>();
+	// }
 
-	//Calculation code
-	public void Add(int FirstNumber, int SecondNumber){
-		Total = FirstNumber + SecondNumber;
-		print(Total);
+	// //Calculation code
+	// public void Add(int FirstNumber, int SecondNumber){
+	// 	Total = FirstNumber + SecondNumber;
+	// 	print(Total);
 
-		Total = FirstNumber - SecondNumber;
-		print(Total);
+	// 	Total = FirstNumber - SecondNumber;
+	// 	print(Total);
 
-		Total = FirstNumber * SecondNumber;
-		print(Total);
+	// 	Total = FirstNumber * SecondNumber;
+	// 	print(Total);
 
-		Total = FirstNumber / SecondNumber;
-		print(Total);
+	// 	Total = FirstNumber / SecondNumber;
+	// 	print(Total);
 
-	}
+	// }
 	
 }
