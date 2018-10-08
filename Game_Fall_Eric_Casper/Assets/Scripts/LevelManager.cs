@@ -33,20 +33,20 @@ public class LevelManager : MonoBehaviour {
 
 	public IEnumerator RespawnPlayerCo(){
 		//Generate Death Particle
-		Instantiate (deathParticle, Player.transform.position, Player.transform.rotation);
+		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
 		//Hide Player
 		//Player.enabled = false;
-		Player.GetComponent<Renderer> ().enabled = false
+		Player.GetComponent<Renderer> ().enabled = false;
 		// Gravity Reset
 		GravityStore = Player.GetComponent<Rigidbody2D>().gravityScale;
 		Player.GetComponent<Rigidbody2D>().gravityScale = 0f;
 		Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		// Point Penalty
-		ScoreManager.AddPoints(-PointPenatlyOnDeath);
+		ScoreManager1.AddPoints(-PointPenatlyOnDeath);
 		// Debug Message
 		Debug.Log ("Player Respawn");
 		//Respawn Delay
-		yield return new WaitForSeconds (respawnDelay);
+		yield return new WaitForSeconds (RespawnDelay);
 		//Gravity Restore
 		Player.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
 		//Match Players transform position
