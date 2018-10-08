@@ -47,6 +47,14 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log ("Player Respawn");
 		//Respawn Delay
 		yield return new WaitForSeconds (respawnDelay);
-		//
+		//Gravity Restore
+		Player.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
+		//Match Players transform position
+		Player.transform.position = CurrentCheckPoint.transform.position;
+		//Show Player
+		// Player.enabled = true;
+		Player.GetComponent<Renderer> ().enabled = true;
+		//Spawn Particle
+		Instantiate (RespawnPartile, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	}
 }
