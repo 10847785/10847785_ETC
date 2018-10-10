@@ -10,17 +10,17 @@ public class Calculator : MonoBehaviour {
 
 	// //Calculation code
 	// public void Add(int FirstNumber, int SecondNumber){
-	// 	Total = FirstNumber + SecondNumber;
-	// 	print(Total);
+	// 	total = FirstNumber + SecondNumber;
+	// 	print(total);
 
-	// 	Total = FirstNumber - SecondNumber;
-	// 	print(Total);
+	// 	total = FirstNumber - SecondNumber;
+	// 	print(total);
 
-	// 	Total = FirstNumber * SecondNumber;
-	// 	print(Total);
+	// 	total = FirstNumber * SecondNumber;
+	// 	print(total);
 
-	// 	Total = FirstNumber / SecondNumber;
-	// 	print(Total);
+	// 	total = FirstNumber / SecondNumber;
+	// 	print(total);
 
 	// }
 	

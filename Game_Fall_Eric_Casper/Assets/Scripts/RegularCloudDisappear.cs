@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RegularCloudDisappear : MonoBehaviour {
+// public class RegularCloudDisappear : Regular {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+// 	public bool appear;
 	
-	// Update is called once per frame
-	void Update () {
+// 	// Use this for initialization
+// 	void Start () {
 		
-	}
-}
+// 	}
+	
+// 	// Update is called once per frame
+// 	void Update () {
+		
+// 	}
+// }
