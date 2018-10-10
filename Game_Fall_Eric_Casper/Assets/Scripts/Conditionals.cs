@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Conditionals : MonoBehaviour {
 
-	public string Weather
+	public string Weather;
 
 
 
 	// Use this for initialization
 	void Start () {
+		
 		if(Weather == "Raining")
 			print("Weather is " + Weather);
 		else if (Weather == "Snowing")
@@ -23,8 +24,3 @@ public class Conditionals : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
