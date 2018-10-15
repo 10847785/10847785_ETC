@@ -21,9 +21,9 @@ public class EnemyPartrol : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		NotAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, WallCheckRadius, WhatIsWall)
+		NotAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, WallCheckRadius, WhatIsWall);
 
-		HittingWall = Physics2D.OverlapCircle(WallCheck.position, WallCheckRadius, WhatIsWall)
+		HittingWall = Physics2D.OverlapCircle(WallCheck.position, WallCheckRadius, WhatIsWall);
 
 		// Turn around at Wall or Edge
 		if (HittingWall || !NotAtEdge){
@@ -36,7 +36,7 @@ public class EnemyPartrol : MonoBehaviour {
 		}
 		else {
 			transform.localScale = new Vector3(0.2f,0.2f,1f);
-			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>(). velocity.);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>(). velocity.y);
 		}
 	}
 }
