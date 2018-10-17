@@ -1581,7 +1581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentCheckPoint: {fileID: 998531359}
   Player: {fileID: 1804401432}
-  DeathParticle: {fileID: 0}
+  DeathParticle: {fileID: 1094460862079644, guid: 7394ff129d09475428cc6afc320fb532,
+    type: 2}
   RespawnPartile: {fileID: 0}
   RespawnDelay: 1
   PointPenatlyOnDeath: 10
