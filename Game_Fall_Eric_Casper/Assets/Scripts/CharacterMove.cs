@@ -8,6 +8,8 @@ public class CharacterMove : MonoBehaviour {
 	public int MoveSpeed;
 	public float JumpHeight;
 	private bool DoubleJump;
+	// Sprite Animation
+	public Sprite MoveRight;
 
 	// Player Grounded variables
 	public Transform GroundCheck;
