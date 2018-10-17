@@ -55,6 +55,7 @@ public class CharacterMove : MonoBehaviour {
 		if(Input.GetKey (KeyCode.D)){
 			// GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = MoveSpeed;
+			GetComponent<SpriteRenderer>().sprite = MoveRight;
 		}
 
 		if(Input.GetKey (KeyCode.A)){
