@@ -27,7 +27,15 @@ public class Projectile : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Enemy"){
-			
+			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
+			Destroy (other.gameObject);
+			ScoreManager1.AddPoints (PointsForKill);
 		}
+
+		Instantiate(ProjectileParticle, transform.position, transform.rotation);
+		Destroy (gameObject);
 	}
+
+
+
 }
