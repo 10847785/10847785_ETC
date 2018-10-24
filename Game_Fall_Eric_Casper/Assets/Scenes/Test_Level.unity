@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 731694853}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,10 +990,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1138210487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c8f61579cc1b5f49a396bff083c85e1, type: 3}
+  m_Script: {fileID: 11500000, guid: cddbbf9fbc22db04ca70c44f849a2d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weather: Raining
+  Num: 40
+  Color: Blue
 --- !u!4 &1138210489
 Transform:
   m_ObjectHideFlags: 0
@@ -1243,9 +1244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6807692a7bb70cf42abb91b94ba7d404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
+  Speed: 50
   PC: {fileID: 1804401432}
-  EnemyDeath: {fileID: 0}
+  EnemyDeath: {fileID: 1522078766}
   ProjectileParticle: {fileID: 1522078766}
   PointsForKill: 10
 --- !u!1 &1569569645

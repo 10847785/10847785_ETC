@@ -21,10 +21,6 @@ public class Loops : MonoBehaviour {
 		// 	Num --;
 		// }
 
-		while(Color == "Red"){
-			Print("Color is " + Color);
-			
-		}
 	}
 	
 	// Update is called once per frame
