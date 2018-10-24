@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6807692a7bb70cf42abb91b94ba7d404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 50
+  Speed: 15
   PC: {fileID: 1804401432}
   EnemyDeath: {fileID: 1522078766}
   ProjectileParticle: {fileID: 1522078766}
