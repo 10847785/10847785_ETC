@@ -5,7 +5,7 @@ using UnityEngine;
 public class Loops : MonoBehaviour {
 
 	public int Num = 40;
-
+	public bool rain
 	public string Color = "Blue";
 
 	// Use this for initialization
@@ -21,7 +21,15 @@ public class Loops : MonoBehaviour {
 		// 	Num --;
 		// }
 
-		for(int rain; rain <)
+		for(int rain; rain <= 1:00; rain++){
+			print(rain + "Raining");
+		}
+
+		while(Num > 0){
+			print("The rain is gone" + Num);
+			Num --;
+		}
+
 	}
 	
 	// Update is called once per frame
