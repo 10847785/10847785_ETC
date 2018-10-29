@@ -30,23 +30,19 @@ public class Loops : MonoBehaviour {
 			Num --;
 		}
 
-		for(int i=5; i <= 1++){
-			print(i + "Sky is Falling" + Num);
-		}
-
-		do(Num = 1){
-			print("Countdown" = 1);
-		}
-		while(Num > 5){
-			print(i + "It's over" + Num);
-			Num ++;
-		}
+		// for(int i=5; i <= 1++){
+		// 	print(i + "Sky is Falling");
+		// }
+		// while(Num > 5){
+		// 	print(i + "It's over" + Num);
+		// 	Num ++;
+		// }
 		
 		}
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	// void Update () {
 		
-	}
-}
+	// }
+
