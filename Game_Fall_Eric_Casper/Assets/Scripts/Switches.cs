@@ -10,8 +10,9 @@ public class Switches : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		if(num == 10)
+		if(num == 10){
 			print("Hurray you picked ten!");
+		}
 		
 		else
 			print("Boo! You didn't pick ten!");
@@ -30,11 +31,14 @@ public class Switches : MonoBehaviour {
 			case 6:
 				print("You picked" + num );
 			break;
-			
+
 			case 10:
 				print("You picked" + num );
 			break;
-
+			
+			default:
+				print("I don't understand" + num);
+			break;
 		}
 	}
 	
