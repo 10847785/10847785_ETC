@@ -6,6 +6,7 @@ public class Switches : MonoBehaviour {
 
 	public int num;
 	public string name;
+	public float spell = 10f;
 
 
 	// Use this for initialization
@@ -62,6 +63,37 @@ public class Switches : MonoBehaviour {
 		default:
 			print("I don't know" + name);
 		break;
+
+	}
+	switch(spell){
+		case 1f:
+			print("Alicazam");
+		break;
+
+		case 3f:
+			print("Open says me");
+		break;
+
+		case 5f:
+			print("Abracadabra");
+		break;
+
+		case 7f:
+			print("Shamalama Ding Dong");
+		break;
+
+		case 9f:
+			print("Lichromenta");
+		break;
+
+		case 10f:
+			print("Pomdoda");
+		break;
+
+		default:
+			print("I don't know" + spell);
+		break;
+
 
 	}
 	}
