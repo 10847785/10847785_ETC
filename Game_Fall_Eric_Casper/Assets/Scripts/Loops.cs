@@ -21,6 +21,7 @@ public class Loops : MonoBehaviour {
 		// 	Num --;
 		// }
 
+		for(int rain; rain <)
 	}
 	
 	// Update is called once per frame
