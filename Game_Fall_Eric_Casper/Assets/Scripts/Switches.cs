@@ -52,7 +52,7 @@ public class Switches : MonoBehaviour {
 		break;
 
 		case "Freddie":
-			print("Welcome to Elm Street" = name);
+			print("Welcome to Elm Street" + name);
 		break;
 
 		case "Leatherface":
@@ -62,7 +62,7 @@ public class Switches : MonoBehaviour {
 		default:
 			print("I don't know" + name);
 		break;
-		
+
 	}
 	}
 	
