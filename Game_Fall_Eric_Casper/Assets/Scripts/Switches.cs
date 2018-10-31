@@ -8,6 +8,7 @@ public class Switches : MonoBehaviour {
 	public string objectName;
 	public int spell;
 	public string room;
+	public bool lights;
 
 
 	// Use this for initialization
@@ -98,14 +99,41 @@ public class Switches : MonoBehaviour {
 		default:
 			print("I don't know" + spell);
 		break;
-
-
 	}
 
 		switch(room){
 			case "Yard":
-				print("You are entering the yard");
+				print("You are entering the yard.");
 			break;
+
+			case "House":
+				print("Welcome home!");
+			break;
+
+			case "Woods":
+				print("You are entering the woods.");
+			break;
+
+			default:
+				print("I don't know this room");
+			break;
+		}
+
+		if(lights == true){
+			print("You have a light");
+		}
+		else
+			print("What light?");
+
+		switch(lights){
+			case true:
+				print("This is lighted" + lights);
+			break;
+
+			default:
+				print("Light is broken");
+			break;
+			
 		}
 	}
 	
