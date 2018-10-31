@@ -71,9 +71,9 @@ public class Switches : MonoBehaviour {
 		break;
 		
 		case 2:
-			print("");
+			print("Double Maxous");
 		break;
-		
+
 		case 3:
 			print("Open says me");
 		break;
