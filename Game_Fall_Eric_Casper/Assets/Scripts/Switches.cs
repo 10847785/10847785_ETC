@@ -139,10 +139,40 @@ public class Switches : MonoBehaviour {
 		}
 		switch(clock){
 			case 3:
-				print("3 o'clock");
+				print("300 hours");
 			break;
 
-			
+			case 6:
+				print("600 hours");
+			break;
+
+			case 9:
+				print("900 hours");
+			break;
+
+			case 12:
+				print("1200 hours");
+			break;
+
+			case 15:
+				print("1500 hours");
+			break;
+
+			case 18:
+				print("1800 hours");
+			break;
+
+			case 21:
+				print("2100 hours");
+			break;
+
+			case 24:
+				print("2400 hours");
+			break;
+
+			default:
+				print("I don't know the time");
+			break;
 
 		}
 	}	
