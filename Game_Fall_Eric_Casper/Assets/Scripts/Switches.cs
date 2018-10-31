@@ -5,8 +5,8 @@ using UnityEngine;
 public class Switches : MonoBehaviour {
 
 	public int num;
-	public string name;
-	public float spell = 10f;
+	public string objectName;
+	public int spell;
 
 
 	// Use this for initialization
@@ -43,17 +43,17 @@ public class Switches : MonoBehaviour {
 	// 		break;
 	// 	}
 
-	switch(name){
+	switch(objectName){
 		case "Jason":
-			print("Welcome to camp crystal lake" + name + " - love mother");
+			print("Welcome to camp crystal lake" + objectName + " - love mother");
 		break;
 
 		case "Michael":
-			print("Welcome to Haddonfield, Ill" + name);
+			print("Welcome to Haddonfield, Ill" + objectName);
 		break;
 
 		case "Freddie":
-			print("Welcome to Elm Street" + name);
+			print("Welcome to Elm Street" + objectName);
 		break;
 
 		case "Leatherface":
@@ -61,32 +61,36 @@ public class Switches : MonoBehaviour {
 		break;
 
 		default:
-			print("I don't know" + name);
+			print("I don't know" + objectName);
 		break;
 
 	}
 	switch(spell){
-		case 1f:
+		case 1:
 			print("Alicazam");
 		break;
-
-		case 3f:
+		
+		case 2:
+			print("");
+		break;
+		
+		case 3:
 			print("Open says me");
 		break;
 
-		case 5f:
+		case 5:
 			print("Abracadabra");
 		break;
 
-		case 7f:
+		case 7:
 			print("Shamalama Ding Dong");
 		break;
 
-		case 9f:
+		case 9:
 			print("Lichromenta");
 		break;
 
-		case 10f:
+		case 10:
 			print("Pomdoda");
 		break;
 
