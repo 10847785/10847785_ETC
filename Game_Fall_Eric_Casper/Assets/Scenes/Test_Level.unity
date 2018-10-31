@@ -1053,7 +1053,7 @@ MonoBehaviour:
   objectName: Jason
   spell: 1
   room: Woods
-  lights: 0
+  lights: 1
   clock: 24
 --- !u!4 &1138210489
 Transform:
