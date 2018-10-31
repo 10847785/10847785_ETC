@@ -8,7 +8,7 @@ public class PlayerShoot : MonoBehaviour {
 	public GameObject Projectile;
 
 	void Start(){
-		Projectile = GameObject.Find("Projectile");
+		// Projectile = GameObject.Find("Projectile");
 	}
 	
 	// Able to shoot

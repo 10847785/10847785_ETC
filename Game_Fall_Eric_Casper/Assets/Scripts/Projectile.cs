@@ -14,6 +14,7 @@ public class Projectile : MonoBehaviour {
 	public int PointsForKill;
 
 	void Start () {
+		PC = GameObject.Find("PC").GetComponent<Rigidbody2D>();
 
 		if(PC.transform.localScale.x < 0)
 			Speed = -Speed;
