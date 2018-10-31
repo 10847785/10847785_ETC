@@ -9,7 +9,9 @@ public class Switches : MonoBehaviour {
 	public int spell;
 	public string room;
 	public bool lights;
-
+	public int clock = 24;
+		
+	
 
 	// Use this for initialization
 	void Start () {
@@ -135,7 +137,15 @@ public class Switches : MonoBehaviour {
 			break;
 			
 		}
-	}
+		switch(clock){
+			case 3:
+				print("3 o'clock");
+			break;
+
+			
+
+		}
+	}	
 	
 	// Update is called once per frame
 	void Update () {
