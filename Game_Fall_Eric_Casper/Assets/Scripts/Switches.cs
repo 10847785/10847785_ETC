@@ -7,6 +7,7 @@ public class Switches : MonoBehaviour {
 	public int num;
 	public string objectName;
 	public int spell;
+	public string room;
 
 
 	// Use this for initialization
@@ -100,6 +101,12 @@ public class Switches : MonoBehaviour {
 
 
 	}
+
+		switch(room){
+			case "Yard":
+				print("You are entering the yard");
+			break;
+		}
 	}
 	
 	// Update is called once per frame
