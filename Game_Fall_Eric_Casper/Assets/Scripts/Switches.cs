@@ -10,7 +10,7 @@ public class Switches : MonoBehaviour {
 	public string room;
 	public bool lights;
 	public int clock = 24;
-		
+	public string facts;	
 	
 
 	// Use this for initialization
@@ -174,6 +174,20 @@ public class Switches : MonoBehaviour {
 				print("I don't know the time");
 			break;
 
+		}
+		
+		switch(facts){
+			case "Enemies":
+				print(facts + "will kill upon contact with them.");
+			break;
+			
+			case "Magic":
+				print(facts + "attacks will kill enemies.");
+			break;
+
+			case "You":
+				print(facts + "need to defend yourself from the dangerous elements around you.");
+			break;
 		}
 	}	
 	
