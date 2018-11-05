@@ -68,7 +68,13 @@ public class CharacterMove : MonoBehaviour {
 	
 		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
-	
+		//Player flip
+		if (GetComponent<Rigidbody2D>().velocity.x > 0)
+			transform.localScale = new Vector3(0.2596242f, 0.2662281f, 0.05339174f);
+
+		else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+		transform.localScale = new Vector3(-0.2596242f, 0.2662281f, 0.05339174f);
+		
 	}
 
 	public void Jump(){
