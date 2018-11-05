@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour {
 
-	public int[] Eggs = new int[12];	
+	public int[] Eggs = new int[12];
+
+	public string[] Jedi;
 		
 
 	// Use this for initialization
@@ -24,6 +26,19 @@ public class Arrays : MonoBehaviour {
 		Eggs[11] = 12;
 
 		print(Eggs[8]);
+
+
+		Jedi = new string[5];
+
+		Jedi[0] = "Obi Wan Kenobi";
+		Jedi[1] = "Yoda";
+		Jedi[2] = "Mace Windu";
+		Jedi[3] = "Kit Fisto";
+		Jedi[4] = "Luke Skywalker";
+
+		foreach(string item in Jedi){
+			print("Jedi Master " + item);
+		}
 	}
 	
 	// Update is called once per frame
