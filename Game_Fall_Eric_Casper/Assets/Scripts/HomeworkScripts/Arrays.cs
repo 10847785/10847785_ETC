@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour {
 
-	public int[] Eggs = new int[12];
-
+	public int[] Eggs = new int[11];
 	public string[] Jedi;
+	public int[] Feather = new int[5];
 		
 
 	// Use this for initialization
@@ -39,10 +39,28 @@ public class Arrays : MonoBehaviour {
 		foreach(string item in Jedi){
 			print("Jedi Master " + item);
 		}
+
+		Feather[0] = 1;
+		Feather[1] = 2;
+		Feather[2] = 3;
+		Feather[3] = 4;
+		Feather[4] = 5;
+
+		print(Feather[2]);
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
 		
+		// Feathers = new int[5];
+
+		// Feather[0] = 1;
+		// Feather[1] = 2;
+		// Feather[2] = 3;
+		// Feather[3] = 4;
+		// Feather[4] = 5;
+
+		// print(Feather[2]);
 	}
 }
