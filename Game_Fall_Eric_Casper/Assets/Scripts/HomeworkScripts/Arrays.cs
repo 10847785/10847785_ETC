@@ -46,7 +46,9 @@ public class Arrays : MonoBehaviour {
 		Feather[3] = 4;
 		Feather[4] = 5;
 
-		print(Feather[2]);
+		foreach(int item in Feather){
+			print(Feather[2]);
+		}
 	}
 
 	
