@@ -7,6 +7,7 @@ public class Arrays : MonoBehaviour {
 	public int[] Eggs = new int[11];
 	public string[] Jedi;
 	public int[] Feather = new int[5];
+	public string[] Witch;
 		
 
 	// Use this for initialization
@@ -48,6 +49,19 @@ public class Arrays : MonoBehaviour {
 
 		foreach(int item in Feather){
 			print(Feather[2]);
+		}
+
+		Witch = new string[6];
+
+		Witch[0] = "Grenelda";
+		Witch[1] = "Edna";
+		Witch[2] = "Beatrice";
+		Witch[3] = "Pipo";
+		Witch[4] = "Draga";
+		Witch[5] = "Rhapsida";
+
+		foreach(string item in Witch){
+			print("Welcome fellow witch" + item);
 		}
 	}
 
