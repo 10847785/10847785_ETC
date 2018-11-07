@@ -68,15 +68,5 @@ public class Arrays : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		// Feathers = new int[5];
-
-		// Feather[0] = 1;
-		// Feather[1] = 2;
-		// Feather[2] = 3;
-		// Feather[3] = 4;
-		// Feather[4] = 5;
-
-		// print(Feather[2]);
 	}
 }
