@@ -33,10 +33,19 @@ public class Projectile : MonoBehaviour {
 			ScoreManager1.AddPoints (PointsForKill);
 		}
 
-		Instantiate(ProjectileParticle, transform.position, transform.rotation);
+		
 		Destroy (gameObject);
 	}
 
+	void OnCollisionEnter2D(Collision2D other){
+		if(other.gameObject.tag == null){
+		Instantiate(ProjectileParticle, transform.position, transform.rotation);
+		Destroy (gameObject);
+		}
+		else if(other.gameObject.tag == "Player"){
+			print("Hit player");
+		}
+	}
 
 
 }
