@@ -10,6 +10,7 @@ public class Arrays : MonoBehaviour {
 	public string[] Witch;
 	public int[] Water = new int[6];
 	public string[] Townspeople;
+	public int[] Twigs =  new int[6];
 		
 
 	// Use this for initialization
@@ -90,6 +91,16 @@ public class Arrays : MonoBehaviour {
 			print("You have been spotted.");
 		}
 		
+		Twigs[0] = 1;
+		Twigs[1] = 2;
+		Twigs[2] = 3;
+		Twigs[3] = 4;
+		Twigs[4] = 5;
+		Twigs[5] = 6;
+
+		foreach(int item in Twigs){
+			print(Twigs[5]);
+		}
 
 
 
