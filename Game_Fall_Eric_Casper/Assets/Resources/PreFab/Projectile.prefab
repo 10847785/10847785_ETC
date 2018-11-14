@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61580369501402424}
   - component: {fileID: 50778162626579020}
   - component: {fileID: 114061154731137782}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,8 @@ MonoBehaviour:
   Speed: 15
   PC: {fileID: 0}
   EnemyDeath: {fileID: 1094460862079644, guid: 7394ff129d09475428cc6afc320fb532, type: 2}
-  ProjectileParticle: {fileID: 1605988182747808}
+  ProjectileParticle: {fileID: 1094460862079644, guid: 7394ff129d09475428cc6afc320fb532,
+    type: 2}
   PointsForKill: 10
   TimeOut: 1
 --- !u!212 &212982513377394676
