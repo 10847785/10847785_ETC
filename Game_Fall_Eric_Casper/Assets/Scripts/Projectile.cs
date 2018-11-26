@@ -16,6 +16,8 @@ public class Projectile : MonoBehaviour {
 
 	public int TimeOut;
 
+	public GameObject AmmoPickUp;
+
 	void Start () {
 		PC = GameObject.Find("PC");
 
@@ -54,6 +56,14 @@ public class Projectile : MonoBehaviour {
 			print("Hit player");
 		}
 	}
+
+	// void OnTriggerEnter2D(Collider2D other){
+	// 	if(other.tag == "PC"){
+	// 		Instantiate(AmmoPickUp, other.transform.position, other.transform.rotation);
+	// 		Destroy (other.gameObject);
+	// 		AmmoManager.AddAmmo (AmmoToAdd);
+	// 	}
+	// }
 
 
 }

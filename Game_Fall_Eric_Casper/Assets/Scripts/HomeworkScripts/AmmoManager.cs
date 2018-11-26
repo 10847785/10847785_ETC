@@ -13,14 +13,14 @@ public class AmmoManager : MonoBehaviour {
 	void Start () {
 		AmmoText = GetComponent<Text>();
 
-		Ammo = 5;
+		Ammo = 0;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Ammo > 5)
-			Ammo = 5;
+		if (Ammo > 10)
+			Ammo = 10;
 		AmmoText.text = " " + Ammo;
 	}
 
