@@ -27,7 +27,7 @@ public class AmmoManager : MonoBehaviour {
 	public static void AddAmmo (int AmmoToAdd) {
 		Ammo += AmmoToAdd;
 	}
-	public void SubAmmo (int AmmoToSub) {
+	public static void SubAmmo (int AmmoToSub) {
 		Ammo -= AmmoToSub;
 	}
 }

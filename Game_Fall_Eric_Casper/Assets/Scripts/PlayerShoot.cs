@@ -13,8 +13,9 @@ public class PlayerShoot : MonoBehaviour {
 	
 	// Able to shoot
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.RightControl))
+		if(Input.GetKeyDown(KeyCode.RightControl) && AmmoManager.Ammo > 0){
 			Instantiate(Projectile,FirePoint.position, FirePoint.rotation);
-
+			AmmoManager.SubAmmo(1);
 	}
+}
 }

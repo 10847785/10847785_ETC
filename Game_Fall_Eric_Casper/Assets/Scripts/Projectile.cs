@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour {
 	public GameObject ProjectileParticle;
 	public int PointsForKill;
 	public int TimeOut;
-	public AmmoManager SubProjectile;
+	// public AmmoManager SubProjectile;
 
 	void Start () {
 		PC = GameObject.Find("PC");
@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour {
 			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
 			Destroy (other.gameObject);
 			ScoreManager1.AddPoints (PointsForKill);
-			SubProjectile.SubAmmo(1);
+			// SubProjectile.SubAmmo(1);
 		}
 
 		

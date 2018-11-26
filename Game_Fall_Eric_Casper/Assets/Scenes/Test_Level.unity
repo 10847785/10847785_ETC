@@ -576,6 +576,11 @@ Prefab:
       propertyPath: PC
       value: 
       objectReference: {fileID: 1804401429}
+    - target: {fileID: 114061154731137782, guid: 4718e5162d5b29c479ccc0a7e652c8ad,
+        type: 2}
+      propertyPath: SubProjectile
+      value: 
+      objectReference: {fileID: 552224314}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4718e5162d5b29c479ccc0a7e652c8ad, type: 2}
   m_IsPrefabAsset: 0
