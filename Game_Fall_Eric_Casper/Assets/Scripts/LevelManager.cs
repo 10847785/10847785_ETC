@@ -6,7 +6,6 @@ public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
 	public Rigidbody2D Player;
-
 	public GameObject Player2;
 
 	// Particles
@@ -26,6 +25,8 @@ public class LevelManager : MonoBehaviour {
 
 	// Find Objects by type
 	void Start (){
+		
+
 		// player = FindObjectOfType<Rigidbody2D> ();
 	}
 

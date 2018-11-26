@@ -6,6 +6,7 @@ public class KillPlayer : MonoBehaviour {
 
 
 	public LevelManager LevelManager;
+	public HealthManager Damage;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,8 @@ public class KillPlayer : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.name == "PC"){
 			LevelManager.RespawnPlayer();
+			Damage.SubHealth(1);
 		}
+
 	}
 }

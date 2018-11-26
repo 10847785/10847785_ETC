@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
+  Damage: {fileID: 0}
 --- !u!1001 &138289938
 Prefab:
   m_ObjectHideFlags: 0
@@ -1151,6 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
+  Damage: {fileID: 609021312}
 --- !u!1 &736774453
 GameObject:
   m_ObjectHideFlags: 0

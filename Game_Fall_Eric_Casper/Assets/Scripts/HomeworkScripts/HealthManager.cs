@@ -27,4 +27,7 @@ public class HealthManager : MonoBehaviour {
 	public static void AddHealth (int HealthToAdd) {
 		Health += HealthToAdd;
 	}
+	public void SubHealth (int HealthToSub) {
+		Health -= HealthToSub;
+	}
 }

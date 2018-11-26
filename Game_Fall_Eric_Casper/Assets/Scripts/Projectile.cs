@@ -57,13 +57,10 @@ public class Projectile : MonoBehaviour {
 		}
 	}
 
-	// void OnTriggerEnter2D(Collider2D other){
-	// 	if(other.tag == "PC"){
-	// 		Instantiate(AmmoPickUp, other.transform.position, other.transform.rotation);
-	// 		Destroy (other.gameObject);
-	// 		AmmoManager.AddAmmo (AmmoToAdd);
-	// 	}
+	// void update (){
+	// 	HealthManager.AddAmmo (AmmoToAdd)
 	// }
+	}
 
 
-}
+
