@@ -5,18 +5,12 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
-
 	public GameObject PC;
-
 	public GameObject EnemyDeath;
-
 	public GameObject ProjectileParticle;
-
 	public int PointsForKill;
-
 	public int TimeOut;
-
-	public GameObject AmmoPickUp;
+	public AmmoManager SubProjectile;
 
 	void Start () {
 		PC = GameObject.Find("PC");
@@ -41,6 +35,7 @@ public class Projectile : MonoBehaviour {
 			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
 			Destroy (other.gameObject);
 			ScoreManager1.AddPoints (PointsForKill);
+			SubProjectile.SubAmmo(1);
 		}
 
 		
@@ -56,10 +51,7 @@ public class Projectile : MonoBehaviour {
 			print("Hit player");
 		}
 	}
-
-	// void update (){
-	// 	HealthManager.AddAmmo (AmmoToAdd)
-	// }
+	
 	}
 
 
