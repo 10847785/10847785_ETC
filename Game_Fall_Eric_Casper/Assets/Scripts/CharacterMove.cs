@@ -7,7 +7,8 @@ public class CharacterMove : MonoBehaviour {
 	// Player Movement Variables
 	public int MoveSpeed;
 	public float JumpHeight;
-	private bool DoubleJump;
+	private bool CanDoubleJump;
+	public int JumpCount;
 	// Sprite Animation
 	public Sprite MoveRight;
 
@@ -34,19 +35,22 @@ public class CharacterMove : MonoBehaviour {
 	void Update () {
 
 		// This code makes the character jump
-		if(Input.GetKeyDown (KeyCode.Space)&& Grounded){
+		if(Input.GetKeyDown(KeyCode.Space) && JumpCount < 1)
+		{
 			Jump();
+			JumpCount++;
+			CanDoubleJump = true;
+			print("jumping once");
 		}
-		
+
 		// Double Jump Code
-		if(Grounded)
-			DoubleJump = false;
+		if(Grounded){
+			print("grounded");
+			JumpCount = 0;
+		}
 	
 
-		if(Input.GetKeyDown (KeyCode.Space)&& !DoubleJump && !Grounded){
-			Jump();
-			DoubleJump = true;
-		}
+		
 	
 		//Non-Stick Player
 		moveVelocity = 0f;
