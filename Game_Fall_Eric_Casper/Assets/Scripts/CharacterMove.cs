@@ -21,6 +21,7 @@ public class CharacterMove : MonoBehaviour {
 	//Non-Stick Player
 	private float moveVelocity;
 
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -59,6 +60,7 @@ public class CharacterMove : MonoBehaviour {
 		if(Input.GetKey (KeyCode.D)){
 			// GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = MoveSpeed;
+			// animator.SetFloat("Speed", MoveSpeed);
 			GetComponent<SpriteRenderer>().sprite = MoveRight;
 			GetComponent<SpriteRenderer>().flipX = false;
 		}
