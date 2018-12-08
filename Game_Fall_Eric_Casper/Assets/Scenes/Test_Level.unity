@@ -2198,7 +2198,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 242993046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21, y: -1, z: 0}
+  m_LocalPosition: {x: -19.81, y: -1, z: 0}
   m_LocalScale: {x: 1.4765681, y: 0.80156195, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4264,6 +4264,7 @@ GameObject:
   - component: {fileID: 731694848}
   - component: {fileID: 731694847}
   - component: {fileID: 731694853}
+  - component: {fileID: 731694854}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Enemy
@@ -4434,6 +4435,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
   Damage: {fileID: 609021312}
+--- !u!95 &731694854
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731694846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cb41a7d60c306844a8fd411d9a86340, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &735956769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1922439235653266, guid: c327981940a6a1f48aae1d77cefce81f,
@@ -8702,7 +8721,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1804401429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.06, y: 0.245, z: -0.05}
+  m_LocalPosition: {x: -8.97, y: 0.245, z: -0.05}
   m_LocalScale: {x: 0.25962418, y: 0.26622814, z: 0.05339174}
   m_Children:
   - {fileID: 736774454}
