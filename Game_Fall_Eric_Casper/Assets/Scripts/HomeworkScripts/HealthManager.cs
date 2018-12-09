@@ -25,12 +25,12 @@ public class HealthManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Health < 2)
+		if (Health > 2)
 			Health = 2;
 		HealthText.text = " " + Health;
 
 		// If the player win display win test
-		if(Health >= LoseScore ){
+		if(Health <= LoseScore ){
 			print("Game Over =" + Health);
 			LoseText.GetComponent<Text>().enabled = true;
 			Time.timeScale = 0;
