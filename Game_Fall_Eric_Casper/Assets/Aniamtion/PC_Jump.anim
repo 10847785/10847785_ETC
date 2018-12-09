@@ -20,15 +20,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 59a4f332a04fb304eb294e44cefaf6aa, type: 3}
-    - time: 0.016666668
+    - time: 0.083333336
       value: {fileID: 21300000, guid: 59a4f332a04fb304eb294e44cefaf6aa, type: 3}
-    - time: 0.033333335
+    - time: 0.16666667
       value: {fileID: 21300000, guid: 59a4f332a04fb304eb294e44cefaf6aa, type: 3}
     attribute: MoveRight
     path: 
     classID: 114
     script: {fileID: 11500000, guid: 3be049030df19df489d8020f2c090f81, type: 3}
-  m_SampleRate: 60
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -51,7 +51,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.050000004
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
